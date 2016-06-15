@@ -1,9 +1,14 @@
+import Globalize from "globalize";
 import React from "react";
 import ReactDOM from "react-dom";
 import { FormatCurrency, FormatDate, FormatMessage, FormatNumber, FormatRelativeTime } from "react-globalize";
 
 class App extends React.Component {
+
   render() {
+    // Example dynamic Currency code
+    const currency = 'USD';
+
     return <div>
       <div>
         <main>
@@ -16,7 +21,7 @@ class App extends React.Component {
               </tr>
               <tr>
                 <td><FormatMessage>Standalone Currency</FormatMessage></td>
-                <td>"<FormatCurrency currency="USD">{69900}</FormatCurrency>"</td>
+                <td>"<FormatCurrency currency={currency}>{69900}</FormatCurrency>"</td>
               </tr>
               <tr>
                 <td><FormatMessage>Standalone Date</FormatMessage></td>
