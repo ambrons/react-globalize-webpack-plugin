@@ -1,3 +1,4 @@
+import Globalize from "globalize";
 import React from "react";
 import ReactDOM from "react-dom";
 import { FormatCurrency, FormatDate, FormatMessage, FormatNumber, FormatRelativeTime } from "react-globalize";
